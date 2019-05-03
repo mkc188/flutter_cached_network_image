@@ -43,10 +43,10 @@ class CachedNetworkImageProvider
     return new MultiFrameImageStreamCompleter(
         codec: _loadAsync(key),
         scale: key.scale,
-        informationCollector: (StringBuffer information) {
-          information.writeln('Image provider: $this');
-          information.write('Image key: $key');
-        });
+        // informationCollector: (StringBuffer information) {
+        //   information.writeln('Image provider: $this');
+        //   information.write('Image key: $key');
+        // });
   }
 
   Future<ui.Codec> _loadAsync(CachedNetworkImageProvider key) async {
